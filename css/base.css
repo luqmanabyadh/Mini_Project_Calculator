@@ -154,13 +154,20 @@ input[type=submit] {
 }
 
 .usernamedisplay {
-    color:#bd574e ;
+    color:#e8ecd6 ;
     text-decoration: none;
     display: inline-block;
     font-size: 25px;
     font-family: "HappySchool";
     margin:auto;
     padding-top: 23px;
+    text-shadow: 0px 0px 20px #596c68;
+    opacity: 0.78;
+    transition: 0.3s;
+}
+
+.usernamedisplay:hover {
+    opacity: 1.1;
 }
 
 .gobutton {
@@ -194,10 +201,9 @@ input[type=submit] {
 }
 
 .backbutton:hover {
-    background-color: #e8ecd6; /* Green */
+    background-color: #e8ecd6;
     color: #ef4b4b;
 }
-
 
 .squarebutton {
     background-color: #f68787;
@@ -259,7 +265,80 @@ input[type=submit] {
     font-family:"HappySchool";
 }
 
-.textshadow {
-    text-shadow: 0px 0px 20px black;
-}  
+.endsessionbutton {
+    background-color: #fff8b5;
+    border: none;
+    width: 50%;
+    height: auto;
+    border-radius: 7px;
+    color: #525d7e;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family:"HappySchool";
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.endsessionbutton:hover {
+    background-color: #525d7e;
+    color: #fff8b5;
+}
+
+#square {
+    background-color:#f68787 ;
+    height: 130px;
+    width: 130px;
+    margin: auto;
+    position: relative;
+    border: 2px solid #596c68;
+}
+
+#round {
+    background-color:#f8a978 ;
+    height: 130px;
+    width: 130px;
+    margin: auto;
+    position: relative;
+    border: 2px solid #596c68;
+    border-radius: 50%;
+
+}
+
+#triangle {
+    width: 0;
+    height: 0;
+    margin: auto;
+    position: relative;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-bottom: 150px solid #596c68;
+    padding: 0px;
+}
+
+#triangle::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+
+    position: absolute;
+    border-left: 65px solid transparent;
+    border-right: 65px solid transparent;
+    border-bottom: 130px solid #f1eb9a;
+    top: 13px;
+    left: -65px;
+    padding: 0px;
+}
+
+#rectangle {
+    background-color:#a4f6a5 ;
+    height: 130px;
+    width: 200px;
+    margin: auto;
+    position: relative;
+    border: 2px solid #596c68
+}
+
 
