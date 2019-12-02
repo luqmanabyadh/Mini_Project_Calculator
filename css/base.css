@@ -115,39 +115,67 @@ body {
     text-align: right;
 }
 
+.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* CSS STYLE */
 
 input[type=submit] {
     border-radius: 5px;
     border: 0px;
-    background: #e08f62;
+    background: #ff8260;
     color: #e8ecd6;
-    @font-face {
-        font-family: Roboto;
-        src: url(Roboto-Medium.ttf);
-    };
+    font-family: "Roboto";
+}
+
+.inputusername {
+    text-align: center;
+    border-radius: 4px;
+    width: 200px; 
+    height: 35px;
+}
+
+.gobutton {
+    text-align: center;
+    width: 200px; 
+    height: 35px;
+}
+
+.gobutton:hover {
+    background:#fc592c;
+    color: #e8ecd6;
 }
 
 .backbutton {
     background-color: #ef4b4b;
     border: none;
-    width: 200px;
+    width: 50%;
     height: auto;
     border-radius: 7px;
     color: #e8ecd6;
-    padding: 15px 32px;
+    padding: 15px 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 18px;
+    font-size: 16px;
     font-family:"HappySchool";
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.backbutton:hover {
+    background-color: #e8ecd6; /* Green */
+    color: #ef4b4b;
 }
 
 .usernamedisplay {
     color:#bd574e ;
-    text-align: justify;
     text-decoration: none;
     display: inline-block;
+    font-size: 28px;
     font-family: "HappySchool";
 }
 
@@ -157,14 +185,13 @@ input[type=submit] {
     width: 230px;
     height: auto;
     border-radius: 7px;
-    color: #e8ecd6;
+    color: #596c68;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 18px;
     font-family:"HappySchool";
-    box-shadow: 0px 0px 0px 4px #2b2024;
 }
 
 .roundbutton {
@@ -173,7 +200,7 @@ input[type=submit] {
     width: 230px;
     height: auto;
     border-radius: 7px;
-    color: #e8ecd6;
+    color: #596c68;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -188,7 +215,7 @@ input[type=submit] {
     width: 230px;
     height: auto;
     border-radius: 7px;
-    color: #e8ecd6;
+    color: #596c68;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -203,7 +230,7 @@ input[type=submit] {
     width: 230px;
     height: auto;
     border-radius: 7px;
-    color: #e8ecd6;
+    color: #596c68;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -214,4 +241,4 @@ input[type=submit] {
 
 .textshadow {
     text-shadow: 0px 0px 20px black;
-}
+}  
