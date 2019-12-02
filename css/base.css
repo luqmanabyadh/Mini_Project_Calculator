@@ -131,6 +131,21 @@ input[type=submit] {
     font-family: "Roboto";
 }
 
+.centerbutton {
+    display: flex;
+    justify-content: center;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+    transition: transform .6s ease;
+}
+
+.zoom2:hover {
+    transform: scale(1.25);
+    transition: transform .5s ease;
+}
+
 .inputusername {
     text-align: center;
     border-radius: 4px;
@@ -138,10 +153,22 @@ input[type=submit] {
     height: 35px;
 }
 
+.usernamedisplay {
+    color:#bd574e ;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    font-family: "HappySchool";
+    margin:auto;
+    padding-top: 23px;
+}
+
 .gobutton {
     text-align: center;
     width: 200px; 
     height: 35px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
 }
 
 .gobutton:hover {
@@ -160,7 +187,7 @@ input[type=submit] {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 20px;
     font-family:"HappySchool";
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
@@ -171,13 +198,6 @@ input[type=submit] {
     color: #ef4b4b;
 }
 
-.usernamedisplay {
-    color:#bd574e ;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 28px;
-    font-family: "HappySchool";
-}
 
 .squarebutton {
     background-color: #f68787;
@@ -242,3 +262,4 @@ input[type=submit] {
 .textshadow {
     text-shadow: 0px 0px 20px black;
 }  
+
