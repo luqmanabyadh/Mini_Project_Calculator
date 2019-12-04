@@ -341,4 +341,55 @@ input[type=submit] {
     border: 2px solid #596c68
 }
 
+.inputnumbersquare {
+    text-align: center;
+    border-radius: 4px;
+    width: 130px; 
+    height: 30px;
+    font-family:"Roboto" ;
+}
 
+.countbutton {
+    background-color: #52d681;
+    border: none;
+    width: 160px;
+    height: auto;
+    border-radius: 7px;
+    color: #fff8b5;
+    padding: 15px 30px;
+    text-align: center;
+    margin-left: 30%;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family:"HappySchool";
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.countbutton:hover {
+    background-color: #fff8b5;
+    color: #52d681;
+}
+
+.newshapebutton {
+    background-color: #f38181;
+    border: none;
+    width: 160px;
+    height: auto;
+    border-radius: 7px;
+    color: #fbfbfb;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family:"HappySchool";
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.newshapebutton:hover {
+    background-color: #fbfbfb;
+    color: #f38181;
+}
