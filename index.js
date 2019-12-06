@@ -7,12 +7,12 @@ let halamandua = document.getElementById("halamandua");
 let usernamedisplay = document.getElementById("usernamedisplay");
 
 //function untuk save username saat di click tombol go
-function saveusername(){
-    if(username.value==''){
+function saveusername() {
+    if (username.value == '') {
         window.alert('Harap Isi Kolom Username')
-    }else{
+    } else {
         //menyimpan username ke storage browser
-        localStorage.setItem('username',username.value);
+        localStorage.setItem('username', username.value);
         //memunculkan tampilan halaman kedua
         halamandua.style.display = 'inline';
         //menghilangkan tampilan halaman pertama
