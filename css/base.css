@@ -257,6 +257,7 @@ input[type=submit] {
     border-radius: 4px;
     width: 200px;
     height: 35px;
+    box-shadow: none;
 }
 
 .usernamedisplay {
@@ -453,6 +454,7 @@ input[type=submit] {
     width: 130px;
     height: 30px;
     font-family: "Roboto";
+    box-shadow: none !important;
 }
 
 .countbutton {
@@ -499,3 +501,27 @@ input[type=submit] {
     background-color: #fbfbfb;
     color: #f38181;
 }
+
+.clearbutton {
+    background-color: #52d681;
+    border: none;
+    width: 160px;
+    height: auto;
+    border-radius: 7px;
+    color: #fff8b5;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "HappySchool";
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.clearbutton:hover {
+    background-color: #fbfbfb;
+    color: #f38181;
+}
+
+

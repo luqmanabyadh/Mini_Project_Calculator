@@ -6,6 +6,7 @@ let halamandua = document.getElementById("halamandua");
 //untuk memunculkan username nya lagi
 let usernamedisplay = document.getElementById("usernamedisplay");
 
+
 //function untuk save username saat di click tombol go
 function saveusername() {
     if (username.value == '') {
@@ -25,4 +26,20 @@ function saveusername() {
 function kembalikehalamansatu() {
     halamanpertama.style.display = 'inline';
     halamandua.style.display = 'none';
+}
+
+function kliktombolsquare() {
+    window.location.href = "kotak.html"
+}
+
+function kliktombolround() {
+    window.location.href = "lingkaran.html"
+}
+
+function kliktomboltriangle() {
+    window.location.href = "segitiga.html"
+}
+
+function kliktombolrectangle() {
+    window.location.href = "persegipanjang.html"
 }
