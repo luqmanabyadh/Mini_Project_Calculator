@@ -8,18 +8,17 @@
 </head>
 
 <body>
-    <!--HALAMAN PENERIMA DATA KOTAK-->
+    <!-- #1 HALAMAN PENERIMA DATA KOTAK-->
+
     <!--DISPLAY NAME DAN END SESSION BUTTON-->
     <div>
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6">
-                <p class="usernamedisplay" id="usernamedisplay"></p>
+                <p class="usernamedisplay" id="usernamedisplay2"></p>
             </div>
     
             <div class="col-lg-6 col-md-6 col-sm-6 kanan">
-                <form action="E:\Hacktiv8 (intro)\14 (29-11-19)\Mini_Project_Calculator\home.html">
-                    <button class="endsessionbutton">End Session</button>
-                </form>
+                <button class="endsessionbutton" onclick="endsessionbutton()">End Session</button>
             </div>
         </div>
         <!--LOGO-->
@@ -36,9 +35,12 @@
         <!--FORM UNTUK MEMASUKKAN UKURAN SISI-->
         </br>
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 centerbutton">
-                <input type="number" placeholder="Input Number" onfocus="this.placeholder=''"
-                    onblur="this.placeholder='Input Number'" class="inputnumbersquare">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="centerbutton">
+                    <p class="labelinput">Input Side : </p>
+                    <input type="number" placeholder="Input Number" onfocus="this.placeholder=''"
+                        onblur="this.placeholder='Input Number'" class="inputnumbersquare" maxlength="2">
+                </div>
             </div>
         </div>
         <!--TOMBOL COUNT-->
@@ -47,13 +49,13 @@
                 <div class="centerbutton">
                     <button class="countbutton">Count!</button>
         <!--TOMBOL NEW SHAPE-->
-                    <button class="newshapebutton">New Shape!</button>
+                    <button class="newshapebutton" onclick="newshapebutton()">New Shape!</button>
                 <div>
             </div>
         </div>
     </div>
 
-    <!--HALAMAN HASIL PENGHITUNGAN-->
+    <!--#2 HALAMAN HASIL PENGHITUNGAN-->
     <div>
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6">
@@ -61,9 +63,7 @@
             </div>
     
             <div class="col-lg-6 col-md-6 col-sm-6 kanan">
-                <form action="E:\Hacktiv8 (intro)\14 (29-11-19)\Mini_Project_Calculator\home.html">
-                    <button class="endsessionbutton">End Session</button>
-                </form>
+                <button class="endsessionbutton" onclick="endsessionbutton()">End Session</button>
             </div>
         </div>
         <!--LOGO-->
@@ -81,8 +81,8 @@
         </br>
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 centerbutton">
-                <input type="number" placeholder="Input Number" onfocus="this.placeholder=''"
-                    onblur="this.placeholder='Input Number'" class="inputnumbersquare">
+                <P class="labelinput">Formula : </P>
+                <p class="labelformula"> (Side X Side)</p>
             </div>
         </div>
         <!--TOMBOL CLEAR-->

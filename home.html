@@ -23,7 +23,7 @@
                 <input id="username" type="text" placeholder="Username" onfocus="this.placeholder=''"
                     onblur="this.placeholder='Username'" class="inputusername" maxlength="18">
             </div>
-            <!--BUTTON SUBMIT-->
+            <!--START BUTTON-->
             <div class="col-lg-12 col-md-12 col-sm-12 centerbutton">
                 <input type="submit" value="Start!" class="gobutton" onclick="saveusername()">
             </div>
@@ -40,7 +40,7 @@
             </div>
 
             <div class="col-lg-6 col-md-6 col-sm-6 kanan">
-                <button class="backbutton" onclick="kembalikehalamansatu()">Back</button>
+                <button class="backbutton" onclick="backbutton()">Back</button>
             </div>
         </div>
 
@@ -55,25 +55,25 @@
         <!--SQUARE BUTTON-->
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 centerbutton">
-                <button class="squarebutton zoom2" onclick="kliktombolsquare()">Square</button>
+                <button id="squarebutton" class="squarebutton zoom2" onclick="squarebutton()">Square</button>
             </div>
         </div>
         <!--ROUND BUTTON-->
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 centerbutton">
-                <button class="roundbutton zoom2" onclick="kliktombolround()">Round</button>
+                <button class="roundbutton zoom2" onclick="roundbutton()">Round</button>
             </div>
         </div>
         <!--TRIANGLE BUTTON-->
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 centerbutton">
-                <button class="trianglebutton zoom2" onclick="kliktomboltriangle()">Triangle</button>
+                <button class="trianglebutton zoom2" onclick="trianglebutton()">Triangle</button>
             </div>
         </div>
         <!--RECTANGLE BUTTON-->
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 centerbutton">
-                <button class="rectanglebutton zoom2" onclick="kliktombolrectangle()">Rectangle</button>
+                <button class="rectanglebutton zoom2" onclick="rectanglebutton()">Rectangle</button>
             </div>
         </div>
     </div>

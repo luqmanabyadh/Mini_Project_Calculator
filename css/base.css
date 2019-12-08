@@ -237,6 +237,7 @@ input[type=submit] {
     font-family: "Roboto";
 }
 
+/* CSS BUTTON */
 .centerbutton {
     display: flex;
     justify-content: center;
@@ -312,66 +313,6 @@ input[type=submit] {
     color: #ef4b4b;
 }
 
-.squarebutton {
-    background-color: #f68787;
-    border: none;
-    width: 230px;
-    height: auto;
-    border-radius: 7px;
-    color: #596c68;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    font-family: "HappySchool";
-}
-
-.roundbutton {
-    background-color: #f8a978;
-    border: none;
-    width: 230px;
-    height: auto;
-    border-radius: 7px;
-    color: #596c68;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    font-family: "HappySchool";
-}
-
-.trianglebutton {
-    background-color: #f1eb9a;
-    border: none;
-    width: 230px;
-    height: auto;
-    border-radius: 7px;
-    color: #596c68;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    font-family: "HappySchool";
-}
-
-.rectanglebutton {
-    background-color: #a4f6a5;
-    border: none;
-    width: 230px;
-    height: auto;
-    border-radius: 7px;
-    color: #596c68;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    font-family: "HappySchool";
-}
-
 .endsessionbutton {
     background-color: #fff8b5;
     border: none;
@@ -392,69 +333,6 @@ input[type=submit] {
 .endsessionbutton:hover {
     background-color: #525d7e;
     color: #fff8b5;
-}
-
-#square {
-    background-color: #f68787;
-    height: 130px;
-    width: 130px;
-    margin: auto;
-    position: relative;
-    border: 2px solid #596c68;
-}
-
-#round {
-    background-color: #f8a978;
-    height: 130px;
-    width: 130px;
-    margin: auto;
-    position: relative;
-    border: 2px solid #596c68;
-    border-radius: 50%;
-
-}
-
-#triangle {
-    width: 0;
-    height: 0;
-    margin: auto;
-    position: relative;
-    border-left: 75px solid transparent;
-    border-right: 75px solid transparent;
-    border-bottom: 150px solid #596c68;
-    padding: 0px;
-}
-
-#triangle::before {
-    content: "";
-    width: 0px;
-    height: 0px;
-
-    position: absolute;
-    border-left: 65px solid transparent;
-    border-right: 65px solid transparent;
-    border-bottom: 130px solid #f1eb9a;
-    top: 13px;
-    left: -65px;
-    padding: 0px;
-}
-
-#rectangle {
-    background-color: #a4f6a5;
-    height: 130px;
-    width: 200px;
-    margin: auto;
-    position: relative;
-    border: 2px solid #596c68
-}
-
-.inputnumbersquare {
-    text-align: center;
-    border-radius: 4px;
-    width: 130px;
-    height: 30px;
-    font-family: "Roboto";
-    box-shadow: none !important;
 }
 
 .countbutton {
@@ -503,7 +381,7 @@ input[type=submit] {
 }
 
 .clearbutton {
-    background-color: #52d681;
+    background-color: #ec9b3b;
     border: none;
     width: 160px;
     height: auto;
@@ -521,7 +399,153 @@ input[type=submit] {
 
 .clearbutton:hover {
     background-color: #fbfbfb;
-    color: #f38181;
+    color: #ec9b3b;
 }
 
+/* CSS LABEL */
 
+.labelinput {
+    font-family: "HappySchool";
+    font-size: 17px;
+    margin-right: 7px;
+    color: #fbfbfb;
+    text-shadow: 2px 2px 3px #3a3535;
+}
+
+.labelformula {
+    font-family: "HappySchool";
+    font-size: 17px;
+    margin-right: 7px;
+    color: #c43d34;
+    text-shadow: 2px 2px 3px #fbfbfb;
+}
+
+/* CSS KOTAK */
+.squarebutton {
+    background-color: #f68787;
+    border: none;
+    width: 230px;
+    height: auto;
+    border-radius: 7px;
+    color: #596c68;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-family: "HappySchool";
+}
+
+#square {
+    background-color: #f68787;
+    height: 130px;
+    width: 130px;
+    margin: auto;
+    position: relative;
+    border: 2px solid #596c68;
+}
+
+.inputnumbersquare {
+    text-align: center;
+    border-radius: 4px;
+    width: 105px;
+    height: 30px;
+    font-family: "Roboto";
+    box-shadow: none;
+    margin-top: 12px;
+}
+
+/* CSS LINGKARAN */
+
+.roundbutton {
+    background-color: #f8a978;
+    border: none;
+    width: 230px;
+    height: auto;
+    border-radius: 7px;
+    color: #596c68;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-family: "HappySchool";
+}
+
+#round {
+    background-color: #f8a978;
+    height: 130px;
+    width: 130px;
+    margin: auto;
+    position: relative;
+    border: 2px solid #596c68;
+    border-radius: 50%;
+}
+
+/* CSS SEGITIGA */
+
+.trianglebutton {
+    background-color: #f1eb9a;
+    border: none;
+    width: 230px;
+    height: auto;
+    border-radius: 7px;
+    color: #596c68;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-family: "HappySchool";
+}
+
+#triangle {
+    width: 0;
+    height: 0;
+    margin: auto;
+    position: relative;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-bottom: 150px solid #596c68;
+    padding: 0px;
+}
+
+#triangle::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+
+    position: absolute;
+    border-left: 65px solid transparent;
+    border-right: 65px solid transparent;
+    border-bottom: 130px solid #f1eb9a;
+    top: 13px;
+    left: -65px;
+    padding: 0px;
+}
+
+/* CSS PERSEGI PANJANG */
+
+.rectanglebutton {
+    background-color: #a4f6a5;
+    border: none;
+    width: 230px;
+    height: auto;
+    border-radius: 7px;
+    color: #596c68;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-family: "HappySchool";
+}
+
+#rectangle {
+    background-color: #a4f6a5;
+    height: 130px;
+    width: 200px;
+    margin: auto;
+    position: relative;
+    border: 2px solid #596c68
+}
