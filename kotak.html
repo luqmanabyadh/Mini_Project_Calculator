@@ -11,97 +11,95 @@
     <!-- #1 HALAMAN PENERIMA DATA KOTAK-->
 
     <!--DISPLAY NAME DAN END SESSION BUTTON-->
-    <div>
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6">
-                <p class="usernamedisplay" id="usernamedisplay2"></p>
-            </div>
-    
-            <div class="col-lg-6 col-md-6 col-sm-6 kanan">
-                <button class="endsessionbutton" onclick="endsessionbutton()">End Session</button>
-            </div>
+<div id="halamansatusquare">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            <p class="usernamedisplay" id="usernamedisplay2"></p>
         </div>
-        <!--LOGO-->
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <img src="Counter logo.png" width="300px" alt="logo" class="zoom displayed">
-            </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-6 kanan">
+            <button class="endsessionbutton" onclick="endsessionbutton()">End Session</button>
         </div>
-        </br>
-        <!--SQUARE SHAPE-->
-        <div class="row centerbutton">
-            <div class="col-lg-12 col-md-12 col-sm-12 zoom" id="square"></div>
+    </div>
+    <!--LOGO-->
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <img src="Counter logo.png" width="300px" alt="logo" class="zoom displayed">
         </div>
-        <!--FORM UNTUK MEMASUKKAN UKURAN SISI-->
-        </br>
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <div class="centerbutton">
-                    <p class="labelinput">Input Side : </p>
-                    <input type="number" placeholder="Input Number" onfocus="this.placeholder=''"
-                        onblur="this.placeholder='Input Number'" class="inputnumbersquare" maxlength="2">
-                </div>
-            </div>
-        </div>
-        <!--TOMBOL COUNT-->
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <div class="centerbutton">
-                    <button class="countbutton">Count!</button>
-        <!--TOMBOL NEW SHAPE-->
-                    <button class="newshapebutton" onclick="newshapebutton()">New Shape!</button>
-                <div>
+    </div>
+    </br>
+    <!--SQUARE SHAPE-->
+    <div class="row centerbutton">
+        <div class="col-lg-12 col-md-12 col-sm-12 zoom" id="square"></div>
+    </div>
+    <!--FORM UNTUK MEMASUKKAN UKURAN SISI-->
+    </br>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="centerbutton">
+                <p class="labelinput">Input Side : </p>
+                <input id="sisisquare" type="number" placeholder="Input Number" onfocus="this.placeholder=''"
+                onblur="this.placeholder='Input Number'" class="inputnumbersquare" min="1" max="9999">
             </div>
         </div>
     </div>
+    <!--TOMBOL COUNT-->
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="centerbutton">
+                <button class="countbutton" onclick="squarecount()">Count!</button>
+    <!--TOMBOL NEW SHAPE-->
+                <button class="newshapebutton" onclick="newshapebutton()">New Shape!</button>
+            <div>
+        </div>
+    </div>
+</div>
 
     <!--#2 HALAMAN HASIL PENGHITUNGAN-->
-    <div>
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6">
-                <p class="usernamedisplay">Luqman Abyadh</p>
-            </div>
-    
-            <div class="col-lg-6 col-md-6 col-sm-6 kanan">
-                <button class="endsessionbutton" onclick="endsessionbutton()">End Session</button>
-            </div>
+<div id="halamanduasquare">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            <p class="usernamedisplay">Luqman Abyadh</p>
         </div>
-        <!--LOGO-->
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <img src="Counter logo.png" width="300px" alt="logo" class="zoom displayed">
-            </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 kanan">
+            <button class="endsessionbutton" onclick="endsessionbutton()">End Session</button>
         </div>
-        </br>
-        <!--BENTUK KOTAK, YANG SUDAH ADA HASIL OPERASI NYA-->
-        <div class="row centerbutton">
-            <div class="col-lg-12 col-md-12 col-sm-12 zoom" id="square"></div>
-        </div>
-        <!--FORM UNTUK MEMASUKKAN UKURAN SISI-->
-        </br>
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 centerbutton">
-                <P class="labelinput">Formula : </P>
-                <p class="labelformula"> (Side X Side)</p>
-            </div>
-        </div>
-        <!--TOMBOL CLEAR-->
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <div class="centerbutton">
-                    <button class="clearbutton">Clear</button>
-        <!--TOMBOL NEW SHAPE-->
-                    <button class="newshapebutton">New Shape!</button>
-                <div>
-            </div>
-        </div>
-
-
-
     </div>
-    
+    <!--LOGO-->
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <img src="Counter logo.png" width="300px" alt="logo" class="zoom displayed">
+        </div>
+    </div>
+    </br>
+    <!--BENTUK KOTAK, YANG SUDAH ADA HASIL OPERASI NYA-->
+    <div class="row centerbutton">
+        <div class="col-lg-12 col-md-12 col-sm-12 zoom" id="square">
+            <p id="squareresult"></p>
+        </div>
+    </div>
+    <!--FORM UNTUK FORMULA-->
+    </br>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 centerbutton">
+            <P class="labelinput">Formula : </P>
+            <p class="labelformula"> (Side X Side)</p>
+        </div>
+    </div>
+    <!--TOMBOL CLEAR-->
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="centerbutton">
+                <button class="clearbutton">Clear</button>
+    <!--TOMBOL NEW SHAPE-->
+                <button class="newshapebutton" onclick="newshapebutton()">New Shape!</button>
+            <div>
+        </div>
+    </div>
+</div>
 
-    <script src="index.js"></script>
+<script src="shape.js"></script>
+<script src="index.js"></script>
 </body>
 
 </html>
