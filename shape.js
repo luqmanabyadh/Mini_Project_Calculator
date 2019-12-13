@@ -23,6 +23,6 @@ function squarecount() {
     let angka = sisisquare.value
     let angkaint = parseInt(angka)
     let hasil = angkaint * angkaint
-    squareresult.innerHTML = hasil
+    squareresult.innerHTML = hasil + " m2"
 }
 

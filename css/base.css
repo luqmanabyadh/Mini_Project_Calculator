@@ -420,6 +420,16 @@ input[type=submit] {
     text-shadow: 2px 2px 3px #fbfbfb;
 }
 
+.stylehasil {
+    color:#fbfbfb ;
+    font-family: "HappySchool";
+    font-size: 17px;
+    justify-content: center;
+    display: flex;
+    margin-top: 40px;
+    text-shadow: 2px 2px 3px #3a3535;
+}
+
 /* CSS KOTAK */
 .squarebutton {
     background-color: #f68787;
@@ -549,3 +559,4 @@ input[type=submit] {
     position: relative;
     border: 2px solid #596c68
 }
+
