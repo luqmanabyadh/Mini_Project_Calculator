@@ -9,99 +9,95 @@
 
 <body>
 
-    <!--DISPLAY NAME DAN END SESSION BUTTON-->
-    <div>
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6">
-                <p class="usernamedisplay">Luqman Abyadh</p>
-            </div>
-            
-            <div class="col-lg-6 col-md-6 col-sm-6 kanan">
-                <button class="endsessionbutton" onclick="endsessionbutton()">End Session</button>
-            </div>
+    <!--#1 DISPLAY NAME DAN END SESSION BUTTON-->
+<div>
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            <p class="usernamedisplay">Luqman Abyadh</p>
+        </div> 
+        <div class="col-lg-6 col-md-6 col-sm-6 kanan">
+            <button class="endsessionbutton" onclick="endsessionbutton()">End Session</button>
         </div>
-        <!--LOGO-->
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <img src="Counter logo.png" width="300px" alt="logo" class="zoom displayed">
-            </div>
-            </div>
-            </br></br>
-        <!--RECTANGLE SHAPE-->
-        <div class="row centerbutton">
-            <div class="col-lg-12 col-md-12 col-sm-12 zoom" id="rectangle"></div>
-        </div>
-        <!--FORM UNTUK MEMASUKKAN UKURAN LEBAR-->
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <div class="centerbutton">
-                    <p class="labelinput">Input Width : </p>
-                    <input type="number" placeholder="Input Width" onfocus="this.placeholder=''"
-                    onblur="this.placeholder='Input Width'" class="inputnumbersquare">
-        <!--FORM UNTUK MEMASUKKAN UKURAN TINGGI-->
-                    <p class="labelinput">Input Height : </p>
-                    <input type="number" placeholder="Input Height" onfocus="this.placeholder=''"
-                    onblur="this.placeholder='Input Height'" class="inputnumbersquare">
-                </div>
-            </div>
-        </div>
-         <!--TOMBOL COUNT-->
-         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <div class="centerbutton">
-                    <button class="countbutton">Count!</button>
-            <!--TOMBOL NEW SHAPE-->
-                    <button class="newshapebutton" onclick="newshapebutton()">New Shape!</button>
-                <div>
-            </div>
-        </div>
-
     </div>
-
-    <!--HALAMAN HASIL PENGHITUNGAN-->
-    <div>
-        <!--DISPLAY NAME DAN END SESSION BUTTON-->
-    <div>
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6">
-                <p class="usernamedisplay"></p>
-            </div>
-                
-            <div class="col-lg-6 col-md-6 col-sm-6 kanan">
-                <button class="endsessionbutton" onclick="endsessionbutton()">End Session</button>
-            </div>
+    <!--LOGO-->
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <img src="Counter logo.png" width="300px" alt="logo" class="zoom displayed">
         </div>
-        <!--LOGO-->
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <img src="Counter logo.png" width="300px" alt="logo" class="zoom displayed">
-            </div>
-        </div>
-        </br></br>
-        <!--BENTUK KOTAK, YANG SUDAH ADA HASIL OPERASI NYA-->
-        <div class="row centerbutton">
-            <div class="col-lg-12 col-md-12 col-sm-12 zoom" id="rectangle"></div>
-        </div>
-        <!--FORM UNTUK FORMULA-->
-        </br>
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 centerbutton">
-                <P class="labelinput">Formula : </P>
-                <p class="labelformula"> (Width X Height)</p>
-            </div>
-        </div>
-        <!--TOMBOL CLEAR-->
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <div class="centerbutton">
-                    <button class="clearbutton">Clear</button>
-        <!--TOMBOL NEW SHAPE-->
-                    <button class="newshapebutton" onclick="newshapebutton()">New Shape!</button>
-                <div>
-            </div>
-        </div>
-
     </div>
+    </br>
+    </br>
+    <!--RECTANGLE SHAPE-->
+    <div class="row centerbutton">
+        <div class="col-lg-12 col-md-12 col-sm-12 zoom" id="rectangle"></div>
+    </div>
+    <!--FORM UNTUK MEMASUKKAN UKURAN LEBAR-->
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="centerbutton">
+                <p class="labelinput">Input Width : </p>
+                <input type="number" placeholder="Input Width" onfocus="this.placeholder=''"
+                onblur="this.placeholder='Input Width'" class="inputnumber" min="1" max="9999">
+    <!--FORM UNTUK MEMASUKKAN UKURAN TINGGI-->
+                <p class="labelinput">Input Height : </p>
+                <input type="number" placeholder="Input Height" onfocus="this.placeholder=''"
+                onblur="this.placeholder='Input Height'" class="inputnumber" min="1" max="9999">  
+            </div>
+        </div>
+    </div>
+    <!--TOMBOL COUNT-->
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="centerbutton">
+                <button class="countbutton">Count!</button>
+    <!--TOMBOL NEW SHAPE-->
+                <button class="newshapebutton" onclick="newshapebutton()">New Shape!</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!--#2 HALAMAN HASIL PENGHITUNGAN-->
+<!--DISPLAY NAME DAN END SESSION BUTTON-->
+<div>
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            <p class="usernamedisplay"></p>
+        </div>  
+        <div class="col-lg-6 col-md-6 col-sm-6 kanan">
+            <button class="endsessionbutton" onclick="endsessionbutton()">End Session</button>
+        </div>
+    </div>
+    <!--LOGO-->
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <img src="Counter logo.png" width="300px" alt="logo" class="zoom displayed">
+        </div>
+    </div>
+    </br>
+    <!--BENTUK KOTAK, YANG SUDAH ADA HASIL OPERASI NYA-->
+    <div class="row centerbutton">
+        <div class="col-lg-12 col-md-12 col-sm-12 zoom" id="rectangle"></div>
+    </div>
+    <!--FORM UNTUK FORMULA-->
+    </br>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 centerbutton">
+            <P class="labelinput">Formula : </P>
+            <p class="labelformula"> (Width X Height)</p>
+        </div>
+    </div>
+    <!--TOMBOL CLEAR-->
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="centerbutton">
+                <button class="clearbutton">Clear</button>
+    <!--TOMBOL NEW SHAPE-->
+                <button class="newshapebutton" onclick="newshapebutton()">New Shape!</button>
+            </div>
+        </div>
+    </div>
+</div>
 
     <script src="shape.js"></script>
     <script src="index.js"></script>

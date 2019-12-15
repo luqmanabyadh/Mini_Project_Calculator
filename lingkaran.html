@@ -9,106 +9,96 @@
 
 <body>
     <!-- #1 HALAMAN PENERIMA DATA KOTAK-->
-
-    
-    <div>
-        <div class="row">
-        <!--DISPLAY NAME-->
-            <div class="col-lg-6 col-md-6 col-sm-6">
-                <p class="usernamedisplay">Luqman Abyadh</p>
-            </div>
-        <!--END SESSION BUTTON-->
-            <div class="col-lg-6 col-md-6 col-sm-6 kanan">
-                <button class="endsessionbutton">End Session</button>
-            </div>
+<div id="halamansatur">
+    <div class="row">
+    <!--DISPLAY NAME-->
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            <p class="usernamedisplay" id="usernamedisplayr"></p>
         </div>
-
-        <!--LOGO-->
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <img src="Counter logo.png" width="300px" alt="logo" class="zoom displayed">
-            </div>
+    <!--END SESSION BUTTON-->
+        <div class="col-lg-6 col-md-6 col-sm-6 kanan">
+            <button class="endsessionbutton">End Session</button>
         </div>
-        </br>
-
-        <!--ROUND SHAPE-->
-        <div class="row centerbutton">
-            <div class="col-lg-12 col-md-12 col-sm-12 zoom" id="round"></div>
-        </div>
-
-        <!--FORM UNTUK MEMASUKKAN UKURAN JARI JARI-->
-        </br>
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <div class="centerbutton">
-                    <p class="labelinput">Input Radius : </p>
-                    <input type="number" placeholder="Input Number" onfocus="this.placeholder=''"
-                    onblur="this.placeholder='Input Number'" class="inputnumbersquare" maxlength="2">
-                </div>
-            </div>
-        </div>
-
-        <!--TOMBOL COUNT-->
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <div class="centerbutton">
-                    <button class="countbutton">Count!</button>
-        <!--TOMBOL NEW SHAPE-->
-                    <button class="newshapebutton" onclick="newshapebutton()">New Shape!</button>
-                <div>
-            </div>
-        </div>
-
     </div>
+    <!--LOGO-->
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <img src="Counter logo.png" width="300px" alt="logo" class="zoom displayed">
+        </div>
+    </div>
+    </br>
+    <!--ROUND SHAPE-->
+    <div class="row centerbutton">
+        <div class="col-lg-12 col-md-12 col-sm-12 zoom" id="round"></div>
+    </div>
+    <!--FORM UNTUK MEMASUKKAN UKURAN JARI JARI-->
+    </br>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="centerbutton">
+                <p class="labelinput">Input Radius : </p>
+                <input type="number" placeholder="Input Number" onfocus="this.placeholder=''"
+                onblur="this.placeholder='Input Number'" class="inputnumber" min="1" max="9999">
+            </div>
+        </div>
+    </div>
+    <!--TOMBOL COUNT-->
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="centerbutton">
+                <button class="countbutton">Count!</button>
+    <!--TOMBOL NEW SHAPE-->
+                <button class="newshapebutton" onclick="newshapebutton()">New Shape!</button>
+            </div>
+        </div>
+    </div>
+</div>
     
 
     <!--#2 HALAMAN HASIL PENGHITUNGAN-->
-    <div>
-        <div class="row">
-            <!--USERNAME-->
-            <div class="col-lg-6 col-md-6 col-sm-6">
-                <p class="usernamedisplay">Luqman Abyadh</p>
-            </div>
-            <!--END SESSIONBUTTON-->
-            <div class="col-lg-6 col-md-6 col-sm-6 kanan">
-                <button class="endsessionbutton" onclick="endsessionbutton()">End Session</button>
-            </div>
+<div id="halamanduar">
+    <div class="row">
+        <!--USERNAME-->
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            <p class="usernamedisplay"></p>
         </div>
-
-        <!--LOGO-->
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <img src="Counter logo.png" width="300px" alt="logo" class="zoom displayed">
-            </div>
+        <!--END SESSIONBUTTON-->
+        <div class="col-lg-6 col-md-6 col-sm-6 kanan">
+            <button class="endsessionbutton" onclick="endsessionbutton()">End Session</button>
         </div>
-        </br>
-        <!--ROUND SHAPE-->
-        <div class="row centerbutton">
-            <div class="col-lg-12 col-md-12 col-sm-12 zoom" id="round"></div>
-        </div>
-
-        <!--FORM UNTUK MEMASUKKAN UKURAN SISI-->
-        </br>
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 centerbutton">
-                <input type="number" placeholder="Input Number" onfocus="this.placeholder=''"
-                onblur="this.placeholder='Input Number'" class="inputnumbersquare">
-            </div>
-        </div>
-
-        <!--TOMBOL CLEAR-->
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <div class="centerbutton">
-                    <button class="clearbutton">Clear</button>
-        <!--TOMBOL NEW SHAPE-->
-                    <button class="newshapebutton">New Shape!</button>
-                <div>
-            </div>
-        </div>
-    
-
     </div>
+        <!--LOGO-->
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <img src="Counter logo.png" width="300px" alt="logo" class="zoom displayed">
+        </div>
+    </div>
+    </br>
+    <!--ROUND SHAPE-->
+    <div class="row centerbutton">
+        <div class="col-lg-12 col-md-12 col-sm-12 zoom" id="round">
+            <p class="stylehasil"></p>
+        </div>
+    </div>
+    <!--FORM UNTUK FORMULA-->
+    </br>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 centerbutton">
+            <P class="labelinput">Formula : </P>
+            <p class="labelformula"> (Phi X r X r)</p>
+        </div>
+    </div>
+    <!--TOMBOL CLEAR-->
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="centerbutton">
+                <button class="clearbutton">Clear</button>
+    <!--TOMBOL NEW SHAPE-->
+                <button class="newshapebutton">New Shape!</button>
+            </div>
+        </div>
+    </div>
+</div>
     
     <script src="shape.js"></script>
     <script src="index.js"></script>

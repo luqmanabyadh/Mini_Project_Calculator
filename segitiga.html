@@ -9,44 +9,102 @@
 
 <body>
 
-    <!--DISPLAY NAME DAN END SESSION BUTTON-->
+    <!-- #1 DISPLAY NAME DAN END SESSION BUTTON-->
+<div>
     <div class="row">
+        <!--USERNAME-->
         <div class="col-lg-6 col-md-6 col-sm-6">
-            <p class="usernamedisplay">Luqman Abyadh</p>
+            <p class="usernamedisplay"></p>
         </div>
-
+        <!--ENDSESSION BUTTON-->
         <div class="col-lg-6 col-md-6 col-sm-6 kanan">
             <button class="endsessionbutton">End Session</button>
         </div>
     </div>
-    <!--LOGO-->
+        <!--LOGO-->
     <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12">
             <img src="Counter logo.png" width="300px" alt="logo" class="zoom displayed">
         </div>
     </div>
-    </br></br>
+    </br>
     <!--TRIANGLE SHAPE-->
     <div class="row centerbutton">
         <div class="col-lg-12 col-md-12 col-sm-12 zoom" id="triangle"></div>
     </div>
     <!--FORM UNTUK MEMASUKKAN UKURAN TINGGI-->
-    </br></br>
+    </br>
     <div class="row">
-        <div class="col-lg-6 col-md-12 col-sm-12">
-            <form>
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="centerbutton">
+                <!--FORM UNTUK MEMASUKKAN UKURAN TINGGI-->
+                <p class="labelinput">Input Height : </p>
                 <input type="number" placeholder="Input Height" onfocus="this.placeholder=''"
-                    onblur="this.placeholder='Input Number'">
-            </form>
-        </div>
-        <!--FORM UNTUK MEMASUKKAN UKURAN ALAS-->
-        <div class="col-lg-6 col-md-12 col-sm-12">
-            <form>
+                onblur="this.placeholder='Input Number'" class="inputnumber" max="9999">
+                <!--FORM UNTUK MEMASUKKAN UKURAN ALAS-->
+                <p class="labelinput" style="margin-left: 15px;">Input Base : </p>
                 <input type="number" placeholder="Input Base" onfocus="this.placeholder=''"
-                    onblur="this.placeholder='Input Number'">
-            </form>
+                onblur="this.placeholder='Input Number'" class="inputnumber" min="1" max="9999">
+            </div>  
         </div>
     </div>
+     <!--TOMBOL COUNT-->
+     <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="centerbutton">
+                <button class="countbutton" onclick="squarecount()">Count!</button>
+            <!--TOMBOL NEW SHAPE-->
+                <button class="newshapebutton" onclick="newshapebutton()">New Shape!</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <!--#2 HALAMAN UNTUK HASIL AKHIR-->
+<div>
+    <div class="row">
+        <!--USERNAME-->
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            <p class="usernamedisplay"></p>
+        </div>
+        <!--ENDSESSION BUTTON-->
+        <div class="col-lg-6 col-md-6 col-sm-6 kanan">
+            <button class="endsessionbutton">End Session</button>
+        </div>
+    </div>
+        <!--LOGO-->
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <img src="Counter logo.png" width="300px" alt="logo" class="zoom displayed">
+        </div>
+    </div>
+    </br>
+    <!--BENTUK SEGITIGA YANG SUDAH ADA HASIL NYA-->
+    <div class="row centerbutton">
+        <div class="col-lg-12 col-md-12 col-sm-12 zoom" id="triangle">
+            <P class="stylehasil"></P>
+        </div>
+    </div>
+    
+    <!--FORM UNTUK FORMULA-->
+    </br>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 centerbutton">
+            <P class="labelinput">Formula : </P>
+            <p class="labelformula"> ( (Height X Base) / 2 )</p>
+        </div>
+    </div>
+    <!--TOMBOL CLEAR-->
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="centerbutton">
+                <button class="clearbutton">Clear</button>
+    <!--TOMBOL NEW SHAPE-->
+                <button class="newshapebutton">New Shape!</button>
+            </div>
+        </div>
+    </div>
+</div>
+    
 
     
     <script src="shape.js"></script>
