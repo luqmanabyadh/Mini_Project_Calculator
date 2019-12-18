@@ -9,15 +9,15 @@
 
 <body>
     <!-- #1 HALAMAN PENERIMA DATA KOTAK-->
-<div id="halamansatur">
+<div id="halamansatushape">
     <div class="row">
     <!--DISPLAY NAME-->
         <div class="col-lg-6 col-md-6 col-sm-6">
-            <p class="usernamedisplay" id="usernamedisplayr"></p>
+            <p class="usernamedisplay" id="usernamedisplay"></p>
         </div>
     <!--END SESSION BUTTON-->
         <div class="col-lg-6 col-md-6 col-sm-6 kanan">
-            <button class="endsessionbutton">End Session</button>
+            <button class="endsessionbutton" onclick="endsessionbutton()">End Session</button>
         </div>
     </div>
     <!--LOGO-->
@@ -37,7 +37,7 @@
         <div class="col-lg-12 col-md-12 col-sm-12">
             <div class="centerbutton">
                 <p class="labelinput">Input Radius : </p>
-                <input type="number" placeholder="Input Number" onfocus="this.placeholder=''"
+                <input id="jarijari" type="number" placeholder="Input Number" onfocus="this.placeholder=''"
                 onblur="this.placeholder='Input Number'" class="inputnumber" min="1" max="9999">
             </div>
         </div>
@@ -46,7 +46,7 @@
     <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12">
             <div class="centerbutton">
-                <button class="countbutton">Count!</button>
+                <button class="countbutton" onclick="roundcount()">Count!</button>
     <!--TOMBOL NEW SHAPE-->
                 <button class="newshapebutton" onclick="newshapebutton()">New Shape!</button>
             </div>
@@ -56,11 +56,11 @@
     
 
     <!--#2 HALAMAN HASIL PENGHITUNGAN-->
-<div id="halamanduar">
+<div id="halamanduashape">
     <div class="row">
         <!--USERNAME-->
         <div class="col-lg-6 col-md-6 col-sm-6">
-            <p class="usernamedisplay"></p>
+            <p class="usernamedisplay" id="usernamedisplay2"></p>
         </div>
         <!--END SESSIONBUTTON-->
         <div class="col-lg-6 col-md-6 col-sm-6 kanan">
@@ -77,7 +77,7 @@
     <!--ROUND SHAPE-->
     <div class="row centerbutton">
         <div class="col-lg-12 col-md-12 col-sm-12 zoom" id="round">
-            <p class="stylehasil"></p>
+            <p id="result" class="stylehasil"></p>
         </div>
     </div>
     <!--FORM UNTUK FORMULA-->
@@ -92,9 +92,9 @@
     <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12">
             <div class="centerbutton">
-                <button class="clearbutton">Clear</button>
+                <button onclick="clearbutton()" class="clearbutton">Clear</button>
     <!--TOMBOL NEW SHAPE-->
-                <button class="newshapebutton">New Shape!</button>
+                <button class="newshapebutton" onclick="newshapebutton()">New Shape!</button>
             </div>
         </div>
     </div>

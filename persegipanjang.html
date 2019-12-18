@@ -10,10 +10,10 @@
 <body>
 
     <!--#1 DISPLAY NAME DAN END SESSION BUTTON-->
-<div>
+<div id="halamansatushape">
     <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-6">
-            <p class="usernamedisplay">Luqman Abyadh</p>
+            <p class="usernamedisplay" id="usernamedisplay"></p>
         </div> 
         <div class="col-lg-6 col-md-6 col-sm-6 kanan">
             <button class="endsessionbutton" onclick="endsessionbutton()">End Session</button>
@@ -36,11 +36,11 @@
         <div class="col-lg-12 col-md-12 col-sm-12">
             <div class="centerbutton">
                 <p class="labelinput">Input Width : </p>
-                <input type="number" placeholder="Input Width" onfocus="this.placeholder=''"
+                <input id="lebar" type="number" placeholder="Input Width" onfocus="this.placeholder=''"
                 onblur="this.placeholder='Input Width'" class="inputnumber" min="1" max="9999">
     <!--FORM UNTUK MEMASUKKAN UKURAN TINGGI-->
                 <p class="labelinput">Input Height : </p>
-                <input type="number" placeholder="Input Height" onfocus="this.placeholder=''"
+                <input id="tinggi" type="number" placeholder="Input Height" onfocus="this.placeholder=''"
                 onblur="this.placeholder='Input Height'" class="inputnumber" min="1" max="9999">  
             </div>
         </div>
@@ -49,7 +49,7 @@
     <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12">
             <div class="centerbutton">
-                <button class="countbutton">Count!</button>
+                <button class="countbutton" onclick="reccount()">Count!</button>
     <!--TOMBOL NEW SHAPE-->
                 <button class="newshapebutton" onclick="newshapebutton()">New Shape!</button>
             </div>
@@ -59,10 +59,10 @@
 
     <!--#2 HALAMAN HASIL PENGHITUNGAN-->
 <!--DISPLAY NAME DAN END SESSION BUTTON-->
-<div>
+<div id="halamanduashape">
     <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-6">
-            <p class="usernamedisplay"></p>
+            <p class="usernamedisplay" id="usernamedisplay2"></p>
         </div>  
         <div class="col-lg-6 col-md-6 col-sm-6 kanan">
             <button class="endsessionbutton" onclick="endsessionbutton()">End Session</button>
@@ -77,7 +77,9 @@
     </br>
     <!--BENTUK KOTAK, YANG SUDAH ADA HASIL OPERASI NYA-->
     <div class="row centerbutton">
-        <div class="col-lg-12 col-md-12 col-sm-12 zoom" id="rectangle"></div>
+        <div class="col-lg-12 col-md-12 col-sm-12 zoom" id="rectangle">
+            <p id="result" class="stylehasil"></p>
+        </div>
     </div>
     <!--FORM UNTUK FORMULA-->
     </br>

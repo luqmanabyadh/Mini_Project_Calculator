@@ -4,18 +4,21 @@
 // tg = untuk triangle
 
 // id untuk halaman square
-let usernamedisplaysq = document.getElementById("usernamedisplaysq");
-let usernamedisplaysq2 = document.getElementById("usernamedisplaysq2");
-let halamansatusquare = document.getElementById("halamansatusquare");
-let halamanduasquare = document.getElementById("halamanduasquare");
-let squareresult = document.getElementById("squareresult");
+let usernamedisplayshape = document.getElementById("usernamedisplay");
+let usernamedisplayshape2 = document.getElementById("usernamedisplay2");
+let halamansatushape = document.getElementById("halamansatushape");
+let halamanduashape = document.getElementById("halamanduashape");
+let result = document.getElementById("result");
 let sisisquare = document.getElementById("sisisquare");
-// id untuk halaman round
-let usernamedisplayr = document.getElementById("usernamdisplayr");
-let halamansatur = document.getElementById("halamansatur");
-let halamanduar = document.getElementById("halamanduar");
+let jarijari = document.getElementById("jarijari");
+let alas = document.getElementById("alas");
+let tinggi = document.getElementById("tinggi");
+let lebar = document.getElementById("lebar");
 
 localStorage.setItem("open" , "1");
+usernamedisplayshape.innerHTML = localStorage.getItem('username');
+halamansatushape.style.display = "inline"
+halamanduashape.style.display = "none"
 
 // general button function
 
@@ -25,33 +28,56 @@ function endsessionbutton() {
 }
 
 function clearbutton() {
-    halamansatusquare.style.display = "inline";
-    halamanduasquare.style.display = "none";
+    halamansatushape.style.display = "inline";
+    halamanduashape.style.display = "none";
     sisisquare.value = "";
 }
-
-// square
-usernamedisplaysq.innerHTML = localStorage.getItem('username');
-halamansatusquare.style.display = "inline"
-halamanduasquare.style.display = "none"
 
 // formula square
 
 function squarecount() {
-    usernamedisplaysq2.innerHTML = localStorage.getItem('username');
+    usernamedisplayshape2.innerHTML = localStorage.getItem('username');
     let angkasq = sisisquare.value;
     let angkasqint = parseInt(angkasq);
     let hasil = angkasqint * angkasqint;
-    squareresult.innerHTML = hasil + " m2";
-    halamansatusquare.style.display = "none";
-    halamanduasquare.style.display = "inline";
+    result.innerHTML = hasil + " m2";
+    halamansatushape.style.display = "none";
+    halamanduashape.style.display = "inline";
 }
 
-// round
-usernamedisplayr.innerHTML = localStorage.getItem('username');
-halamansatur.style.display = "inline";
-halamanduar.style.display = "none";
-
-
 // formula round
+function roundcount() {
+    usernamedisplayshape2.innerHTML = localStorage.getItem('username');
+    let angkasq = jarijari.value;
+    let angkasqint = parseInt(angkasq);
+    let hasil = angkasqint * angkasqint * Math.PI;
+    result.innerHTML = hasil + " m2";
+    halamansatushape.style.display = "none";
+    halamanduashape.style.display = "inline";
+}
 
+// formula triangle
+function tricount() {
+    usernamedisplayshape2.innerHTML = localStorage.getItem('username');
+    let angkasq = alas.value;
+    let angkasq2 = tinggi.value;
+    let angkasqint = parseInt(angkasq);
+    let angkasqint2 = parseInt(angkasq2);
+    let hasil = angkasqint * angkasqint2 / 2;
+    result.innerHTML = hasil + " m2";
+    halamansatushape.style.display = "none";
+    halamanduashape.style.display = "inline";
+}
+
+// formula triangle
+function reccount() {
+    usernamedisplayshape2.innerHTML = localStorage.getItem('username');
+    let angkasq = lebar.value;
+    let angkasq2 = tinggi.value;
+    let angkasqint = parseInt(angkasq);
+    let angkasqint2 = parseInt(angkasq2);
+    let hasil = angkasqint * angkasqint2;
+    result.innerHTML = hasil + " m2";
+    halamansatushape.style.display = "none";
+    halamanduashape.style.display = "inline";
+}
